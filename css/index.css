@@ -1,0 +1,45 @@
+/*每一篇*/
+.list_item{
+	width: 900px;
+    margin: 20px auto;
+	padding-bottom: 23px;
+	margin-bottom: 30px;
+	border-bottom: 1px dashed #ddd;
+}
+/*标题*/
+.link_title{
+    margin: 20px 0 0 30px;
+}
+.link_title a{
+	margin-left: 5px;
+	font-size: 25px;
+	color: #000;
+	cursor: pointer;
+}
+.link_title a:hover{
+	color: #999;
+}
+.list_description{
+	font: 14px/24px 'microsoft yahei';
+    margin: 17px 40px 10px 20px;
+    text-indent: 2em;
+    color: #666;
+}
+.list_manage{
+	text-align: right;
+}
+.list_manage span{
+	font-size: 5px;
+	margin-right: 16px;
+	color: #999;
+}
+.list_up:after{
+	content: '顶';
+}
+.list_down:after{
+	content: '踩';
+}
+.link_comments:after{
+	content: "评论";
+}
+

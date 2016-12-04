@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小+</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/html1.css">
+	<link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/sort.js"></script>
+</head>
+<body>
+	<div id="index">
+		<div id="header">
+			<div class="proverb"> a man can succeed at almost anything for which he was unlimited enthusiasm. </div>
+		</div>
+		<div class="apart"></div>
+		<div class="main">
+			<!-- 左边导航 -->
+			<div class="left">
+				<!-- 个人资料 -->
+				<div class="side_child">
+					<div class="part_title">个人资料</div>
+					<div class="part">
+						<div class="logo"></div>
+						<div class="name">小 +</div>
+						<div class="content">
+							<div class="plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+							<div class="contect"><i class="fa fa-qq" aria-hidden="true"></i></div>
+						</div>
+					</div>
+				</div>
+				<!-- 知识 -->
+				<div class="side_child">
+					<div class="part_title">文章分类</div>
+					<div class="part">
+						<ul>
+							<li><i class="fa fa-html5" aria-hidden="true"></i>
+								<a href="html1.html">HTML5</a></li>
+							<li><i class="fa fa-css3" aria-hidden="true"></i>
+								<a href="css.html">CSS3</a></li>
+							<li><i class="fa fa-book" aria-hidden="true"></i>
+								<a href="js.html">JS</a></li>
+							<li><i class="fa fa-git" aria-hidden="true"></i>
+								<a href="git.html">git</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- 文章评论 -->
+				<div class="side_child">
+					<div class="part_title">文章搜索</div>
+					<div class="search">
+						<input type="text" ><i class="fa fa-search" aria-hidden="true"></i>
+					</div>
+				</div>
+				<!-- 评论 -->
+				<div class="side_child">
+					<div class="part_title">评论</div>
+					<div class="talk">
+						<textarea></textarea>&nbsp<i class="fa fa-send fa-lg" aria-hidden="true"></i>
+					</div>
+				</div>
+				<!-- 最新评论 -->
+				<div class="side_child">
+					<div class="part_title">最新评论</div>
+						<div class="talks">
+							<ul>
+								<li><a href="html1.html">HTML5基础知识汇总_标签结构上的整改</a><br/>小+：我是第一个沙发</li>
+								<li><a href="html2.html"> 网页元素居中攻略记_未知宽高元素绝对居中</a><br/>小+：这个不错耶</li>
+								<li><a href="css.html">CSS3:简易的循环弹跳动画</a><br/>小+：哇，好酷</li>
+								<li><a href="js.html">正则总结 - 不完全深入版</a><br/>小+：这么腻害</li>
+								<li><a href="git.html">Git与Github折腾记-常用命令汇总</a><br/>小+：get</li>
+							</ul>
+						</div>
+					</div>
+			</div>
+			<!-- 右边正文 -->
+			<div class="right">
+				<div class="title">HTML5基础知识汇总_标签结构上的整改</div>
+				<div class="list_manage">
+					<span class="link_postdate">2015-08-24 19:14</span>
+					<span class="link_comments"><i class="fa fa-commenting-o" aria-hidden="true"></i>&nbsp</span>
+					<span class="link_star"><i class="fa fa-star-o" aria-hidden="true"></i>&nbsp</span>
+					<span class="link_exclamation"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp</span>
+				</div>
+				<div class="lists">
+					<div class="lists_l">
+						<i class="fa fa-bars" aria-hidden="true"></i>&nbsp
+					</div>
+					<div class="lists_r">
+						<label><span>html5</span>
+						<div class="subItem">
+                            <div class="subItem_t">
+                            	<a href="" target="_blank">同类文章</a><i class="fa fa-close fa-lg"></i>
+                            </div>
+                            <ul class="subItem_l">		
+                            	<li><a href="html2.html"> 网页元素居中攻略记_未知宽高元素绝对居中</a></li>
+                            	<li style="padding-left: 300px;"><a href="index.html">更多</a></li>
+                            </ul>
+                        </div>
+                        </label>
+					</div>
+				</div>
+				<div class="list_title">题记:</div>
+				<div class="list_description">
+					目前对HTML5所有特性(PC浏览器)
+					<ul>
+						<li>支持较为完善的有:EDGE/FF40/Chrome42/Safari8</li>
+						<li>基本支持的加上: IE10+</li>
+						<li>部分支持的:IE9</li>
+						<li>个别标签支持的:IE8(依赖JS)</li>
+					</ul>
+					其中新增了一些结构上的标签来替代传统的DIV+CLASS(ID)
+				</div>
+				<div class="list_title">结构上增加的标签:</div>
+				<div class="list_description">hearder
+					<ul style="list-style:none;">
+						<li>此标签可以替代传统的<span class="hljs-tag">&lt;<span>div&nbspid="header"</span>&gt;</span><span>&lt;<span>/div</span>&gt;</span></li>
+					</ul>
+				</div>
+				<div class="list_description">nav
+					<ul style="list-style:none;">
+						<li>同上,作用于导航栏( 一般放进header和footer中),W3C建议使用的标签,比如:</li>
+						<!-- <nav> -->
+						<li><span>&lt;<span>nav</span>&gt;</span></li>
+						<!-- <ul> -->
+						<li>&nbsp&nbsp&nbsp&nbsp<span>&lt;<span>ul</span>&gt;</span></li>
+						<!-- <li>标签1</li> -->
+						<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span>&lt;<span>li</span>&gt;</span><span>标签1</span><span>&lt;<span>/li</span>&gt;</span></li>
+						<!-- <li>标签2</li>  -->
+						<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span>&lt;<span>li</span>&gt;</span><span>标签2</span><span>&lt;<span>/li</span>&gt;</span></li>
+						<!-- <li>标签3</li>  -->
+						<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span>&lt;<span>li</span>&gt;</span><span>标签3</span><span>&lt;<span>/li</span>&gt;</span></li>
+						<!-- </ul> -->
+						<li>&nbsp&nbsp&nbsp&nbsp<span>&lt;<span>/ul</span>&gt;</span></li>
+						<!-- </nav> -->
+						<li><span>&lt;<span>/nav</span>&gt;</span></li>
+					</ul>
+				</div>
+				<div class="list_description">section
+					<ul style="list-style:none;">
+						<li>这个有点类似DIV,但是却不能完全替代DIV….更多的是作为内容块;代指一块内容区域.比如:
+						</li>
+  						<!-- <section> -->
+						<li>&nbsp&nbsp&nbsp&nbsp<span>&lt;<span>section</span>&gt;</span></li>
+   					    <!-- <h1>啦啦德玛西亚</h1> -->
+   					    <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span>&lt;<span>h1</span>&gt;</span><span>啦啦德玛西亚</span><span>&lt;<span>/h1</span>&gt;</span></li>
+						<!-- <p>一部颠倒LOL历史的搞笑动漫</p> -->
+						<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span>&lt;<span>p</span>&gt;</span><span>一部颠倒LOL历史的搞笑动漫</span><span>&lt;<span>/p</span>&gt;</span></li>
+						<!--  </section> -->
+						<li>&nbsp&nbsp<span>&lt;<span>/section</span>&gt;</span></li>
+					</ul>
+				</div>
+				<div class="list_description">aside
+					<ul style="list-style:none;">
+						<li>有点类似上面那个,但是W3C说主要用于侧边栏的内容块展示,比如:
+						</li>
+  						<!-- <aside> -->
+						<li>&nbsp&nbsp&nbsp&nbsp<span>&lt;<span>aside</span>&gt;</span></li>
+   					    <!-- <h1>啦啦德玛西亚</h1> -->
+   					    <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span>&lt;<span>h1</span>&gt;</span><span>啦啦德玛西亚</span><span>&lt;<span>/h1</span>&gt;</span></li>
+						<!-- <p>一部颠倒LOL历史的搞笑动漫</p> -->
+						<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span>&lt;<span>p</span>&gt;</span><span>一部颠倒LOL历史的搞笑动漫</span><span>&lt;<span>/p</span>&gt;</span></li>
+						<!--  </aside> -->
+						<li>&nbsp&nbsp<span>&lt;<span>/aside</span>&gt;</span></li>
+					</ul>
+				</div>
+				<div class="list_description">footer
+					<ul style="list-style:none;">
+						<li>类似header…主要是展示尾部的内容
+						</li>
+					</ul>
+				</div>
+				<div class="list_description">article
+					<ul style="list-style:none;">
+						<li>这个标签主要来作用于写文章……
+						</li>
+					</ul>
+				</div>
+				<div class="list_description">hgroup
+					<ul style="list-style:none;">
+						<li>给字体规格(h1~h6)分组的….目前来说很少看到….用的并不多
+						</li>
+					</ul>
+				</div>
+				<div class="list_description">figure<br/>figcaption
+					<ul style="list-style:none;">
+						<li>这两个标签是一起用的…..figure是包含,figcaption 是描述[且至于头行或者尾行]
+						</li>
+  						<!-- <figure> -->
+						<li>&nbsp&nbsp&nbsp&nbsp<span>&lt;<span>figure</span>&gt;</span></li>
+   					    <!-- <figcaption>啦啦德玛西亚</figcaption> -->
+   					    <li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span>&lt;<span>figcaption</span>&gt;</span><span>啦啦德玛西亚</span><span>&lt;<span>/figcaption</span>&gt;</span></li>
+						<!-- <img src="###.png">-->
+						<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span>&lt;<span>img&nbspsrc="###".png"</span>&gt;</span></li>
+						<!--  </figure> -->
+						<li>&nbsp&nbsp<span>&lt;<span>/figure</span>&gt;</span></li>
+					</ul>
+				</div>
+				<div class="list_title">修改的标签:</div>
+				<div class="list_description">address
+					<ul style="list-style:none;">
+						<li>就进原则来确定作用,而不是像以前那样都代指地址….W3C说:显示与它最近的article或body标签的通讯信息, 可以是电子邮件，网址，电话号码，邮寄地址或其他任何通信信息！</li>
+					</ul>
+				</div>
+				<div class="list_description">abbr
+					<ul style="list-style:none;">
+						<li>标签在HTML5中，与acronym整合；现abbr标签即可以标识缩写词，也可以表示首字母缩略词</li>
+					</ul>
+				</div>
+				<div class="list_description">b
+					<ul style="list-style:none;">
+						<li>与HTML4一样,都是加粗….就是少了语义上的作用,而单纯作为展示!!</li>
+					</ul>
+				</div>
+				<div class="list_description">cite
+					<ul style="list-style:none;">
+						<li>同上,语义上的区别….但是作用基本一致</li>
+					</ul>
+				</div>
+				<div class="list_description">dl
+					<ul style="list-style:none;">
+						<li>重新定义为一个描述或者关联列表 ,其实也就那个样…看自己怎么用</li>
+					</ul>
+				</div>
+				<div class="list_description">i
+					<ul style="list-style:none;">
+						<li>语义上的区别..HTML4中该标签用来创建斜体字。 <br/>Html5中它的作用是以另外一种语气或心情表现内容</li>
+					</ul>
+				</div>
+				<div class="list_description">mark
+					<ul style="list-style:none;">
+						<li>高亮包含的内容</li>
+					</ul>
+				</div>
+				<div class="list_description">ol
+					<ul style="list-style:none;">
+						<li>增加了三个方法</li>
+						<li>&nbsp&nbsp&nbsp1.start — 好理解,起步<span>&lt;<span>ol&nbspstart="3"</span>&gt;</span></li>
+						<li>&nbsp&nbsp&nbsp2.reversed — 好理解,倒叙<span>&lt;<span>ol&nbspreversed</span>&gt;</span></li>
+						<li>&nbsp&nbsp&nbsp3.type — 多了几种计数表现形式</li>
+					</ul>
+				</div>
+				<div class="list_description">s
+					<ul style="list-style:none;">
+						<li>作用同HTML4一致.语义上的区别</li>
+					</ul>
+				</div>
+				<div class="list_description">small
+					<ul style="list-style:none;">
+						<li>HTML4中， 标签关键在于文字大小，与文字含义无关。在HTML5中，元素的新用法是表示附属细则，如法律细则，负责声明等</li>
+					</ul>
+				</div>
+				<div class="list_description">time
+					<ul style="list-style:none;">
+						<li>用来包含时间的…有两个参数(datetime/pudate)…目前不怎么使用…</li>
+						<li>&nbsp&nbsp&nbsp&nbspdatetime 规定日期 / 时间。否则，由元素的内容给定日期 / 时间。</li>
+						<li>&nbsp&nbsp&nbsp&nbsppubdate 指示 元素中的日期 / 时间是文档（或 <span>&lt;<span>article</span>&gt;</span>元素）的发布日期。</li>
+					</ul>
+				</div>
+				<div class="digg">
+					<div class="dig">
+						顶<br/>1
+					</div>
+					<div class="dig">
+						踩<br/>0
+					</div>
+				</div>
+				<div class="list_description">
+					<ul class="pages" style="line-height:36px;">
+						<li><a href="git.html"><div class="last_article"><i class='fa fa-chevron-up' aria-hidden='true'></i>&nbsp&nbsp上一篇</div>&nbsp&nbspGit与Github折腾记-常用命令汇总</a></li>
+						<li><a href="html2.html"><div class="last_article"><i class='fa fa-chevron-up' aria-hidden='true'></i>&nbsp&nbsp下一篇</div>&nbsp&nbsp 网页元素居中攻略记_未知宽高元素绝对居中</a></li>
+					</ul>
+				</div>
+			</div>
+			<a href="javascript:;" id="btn" title="回到顶部"></a>
+		</div>
+	</div>
+</body>
+</html>

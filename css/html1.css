@@ -1,0 +1,140 @@
+.title{
+	margin: 40px 10px 20px 45px;
+    font-size: 28px;
+}
+.list_manage{
+	text-align: right;
+    margin-right: 15px;
+    font-size: 15px;
+    color: #999;
+}
+.list_manage span{
+	margin-right: 15px;
+}
+.lists{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 16px 0 15px 27px;
+    padding: 7px;
+    height: 22px;
+}
+.link_comments:after{
+	content: "评论";
+}
+.link_star:after{
+	content: "收藏";
+}
+.link_exclamation:after{
+	content: "举报";
+}
+.lists_l{
+	width: 100px;
+	float: left;
+}
+.lists_l:after{
+	content: "分类：";
+}
+.lists_r{
+	font-size: 14px;
+    float: left;
+    width: 200px;
+    cursor: pointer;
+}
+.lists_r label{
+	display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+    line-height: 28px;
+    position: relative;
+    color: #df3434;
+
+}
+.list_r .fa-chevron-down,.list_r .fa-chevron-up{
+	float: right;
+	margin-top: 5px;
+}
+.subItem {
+    display: none;
+    position: absolute;
+    top: 46px;
+    left: -10px;
+    color: #333;
+    width: 400px;
+    max-height: 400px;
+    border: solid 1px #dcdcdc;
+    background: #fff;
+    box-shadow: 5px 0 10px #dcdcdc;
+    z-index: 9999;
+}
+.fa-close{
+	float: right;
+	margin-top:15px;
+}
+.subItem_t {
+    height: 42px;
+    line-height: 42px;
+    border-bottom: solid 1px #dcdcdc;
+    padding: 0 20px 0 15px;
+    color: #999;
+}
+.subItem_l {
+    max-height: 358px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.subItem .subItem_l li {
+    height: 52px;
+    line-height: 52px;
+    border-bottom: solid 1px #eeeeee;
+    padding: 0 20px;
+}
+.list_title{
+	font-size: 23px;
+    margin-left: 21px;
+    padding: 19px;
+}
+.list_description{
+	margin-left: 55px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 28px;
+    padding-bottom: 17px;
+    border-bottom: 1px dotted #dcdcdc;
+    padding-right: 40px;
+}
+.digg{
+    margin: 0 auto;
+    text-align: center;
+    width: 250px;    
+    margin-bottom: 33px;
+}
+.dig{
+    width: 50px;
+    padding: 22px;
+    color: white;
+    font-size: 29px;
+    height: 61px;
+    line-height: 20px;
+    background-color: #999;
+    line-height: 38px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 25px;
+}
+.last_article{
+	padding: 2px;
+    width: 75px;
+    color: white;
+    background-color: #999;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+}
+.page li:hover{
+	 color: #e63;
+}
+.page a:link, .page a:visited {
+    color: #c88326;
+}

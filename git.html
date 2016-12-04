@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小+</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/html1.css">
+	<link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/sort.js"></script>
+</head>
+<body>
+	<div id="index">
+		<div id="header">
+			<div class="proverb"> a man can succeed at almost anything for which he was unlimited enthusiasm. </div>
+		</div>
+		<div class="apart"></div>
+		<div class="main">
+			<!-- 左边导航 -->
+			<div class="left">
+				<!-- 个人资料 -->
+				<div class="side_child">
+					<div class="part_title">个人资料</div>
+					<div class="part">
+						<div class="logo"></div>
+						<div class="name">小 +</div>
+						<div class="content">
+							<div class="plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+							<div class="contect"><i class="fa fa-qq" aria-hidden="true"></i></div>
+						</div>
+					</div>
+				</div>
+				<!-- 知识 -->
+				<div class="side_child">
+					<div class="part_title">文章分类</div>
+					<div class="part">
+						<ul>
+							<li><i class="fa fa-html5" aria-hidden="true"></i>
+								<a href="html1.html">HTML5</a></li>
+							<li><i class="fa fa-css3" aria-hidden="true"></i>
+								<a href="css.html">CSS3</a></li>
+							<li><i class="fa fa-book" aria-hidden="true"></i>
+								<a href="js.html">JS</a></li>
+							<li><i class="fa fa-git" aria-hidden="true"></i>
+								<a href="git.html">git</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- 文章评论 -->
+				<div class="side_child">
+					<div class="part_title">文章搜索</div>
+					<div class="search">
+						<input type="text" ><i class="fa fa-search" aria-hidden="true"></i>
+					</div>
+				</div>
+				<!-- 评论 -->
+				<div class="side_child">
+					<div class="part_title">评论</div>
+					<div class="talk">
+						<textarea></textarea>&nbsp<i class="fa fa-send fa-lg" aria-hidden="true"></i>
+					</div>
+				</div>
+				<!-- 最新评论 -->
+				<div class="side_child">
+					<div class="part_title">最新评论</div>
+						<div class="talks">
+							<ul>
+								<li><a href="html1.html">HTML5基础知识汇总_标签结构上的整改</a><br/>小+：我是第一个沙发</li>
+								<li><a href="html2.html"> 网页元素居中攻略记_未知宽高元素绝对居中</a><br/>小+：这个不错耶</li>
+								<li><a href="css.html">CSS3:简易的循环弹跳动画</a><br/>小+：哇，好酷</li>
+								<li><a href="js.html">正则总结 - 不完全深入版</a><br/>小+：这么腻害</li>
+								<li><a href="git.html">Git与Github折腾记-常用命令汇总</a><br/>小+：get</li>
+							</ul>
+						</div>
+					</div>
+			</div>
+			<!-- 右边正文 -->
+			<div class="right">
+				<div class="title">Git与Github折腾记-常用命令汇总</div>
+				<div class="list_manage">
+					<span class="link_postdate">2015-08-24 19:14</span>
+					<span class="link_comments"><i class="fa fa-commenting-o" aria-hidden="true"></i>&nbsp</span>
+					<span class="link_star"><i class="fa fa-star-o" aria-hidden="true"></i>&nbsp</span>
+					<span class="link_exclamation"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp</span>
+				</div>
+				<div class="lists">
+					<div class="lists_l">
+						<i class="fa fa-bars" aria-hidden="true"></i>&nbsp
+					</div>
+					<div class="lists_r">
+						<label><span>git</span>
+						<div class="subItem">
+                            <div class="subItem_t">
+                            	<a href="" target="_blank">同类文章</a><i class="fa fa-close fa-lg"></i>
+                            </div>
+                            <ul class="subItem_l">		
+                            	<li><a href="">还没有更多内容，敬请期待</a></li>
+                            	<li style="padding-left: 300px;"><a href="index.html">更多</a></li>
+                            </ul>
+                        </div>
+                        </label>
+					</div>
+				</div>
+				
+
+				<div class="list_title">简而言之:</div>
+				<div class="list_description">Git是由Linux kernel创立者 Linux Torvalds 开发的（因为BitKeeper的问题），属于DVCS（分布式版本控制） <br/>Github 是一个开源项目社区，始于2007（08上线），GitHub 里面的项目可以通过标准的 Git 命令进行访问和操作 <br/>
+				</div>
+				<div class="list_title">常用命令:</div>
+				<div class="list_description" >查看、添加、提交、删除、找回，重置修改文件
+				<ul >										
+					<li>git help <span>&lt;<span>command</span>&gt;</span> # 显示command的help</li>
+					<li>git show # 显示某次提交的内容 git show $id</li>
+					<li>git co -- <span>&lt;<span>file</span>&gt;</span> # 抛弃工作区修改</li>
+					<li>git co . # 抛弃工作区修改</li>
+					<li>git add <span>&lt;<span>file</span>&gt;</span> # 将工作文件修改提交到本地暂存区</li>
+					<li>git add . # 将所有修改过的工作文件提交暂存区</li>
+					<li>git rm <span>&lt;<span>file</span>&gt;</span> # 从版本库中删除文件</li>
+					<li>git rm <span>&lt;<span>file</span>&gt;</span> --cached # 从版本库中删除文件，但不删除文件</li>
+					<li>git reset <span>&lt;<span>file</span>&gt;</span> # 从暂存区恢复到工作文件</li>
+					<li>git reset -- . # 从暂存区恢复到工作文件</li>
+					<li>git reset --hard # 恢复最近一次提交过的状态，即放弃上次提交后的所有本次修改
+					<li>git ci <span>&lt;<span>file</span>&gt;</span> git ci . git ci -a # 将git add, git rm和git ci等操作都合并在一起做</li>
+					<li> git ci --amend # 修改最后一次提交记录</li>
+					<li> revert <$id> # 恢复某次提交的状态，恢复动作本身也创建次提交对象</li>
+					<li> revert HEAD # 恢复最后一次提交的状态</li>
+				</ul>
+				</div>
+				<div class="list_description" >查看文件diff
+				<ul >	
+					<li>git diff <span>&lt;<span>file</span>&gt;</span> # 比较当前文件和暂存区文件差异 git diff</li>
+					<li>git diff <span>&lt;<span>id1</span>&gt;</span><span>&lt;<span>id1</span>&gt;</span><span>&lt;<span>id2</span>&gt;</span> # 比较两次提交之间的差异</li>
+					<li>git diff <span>&lt;<span>branch1</span>&gt;</span>..<span>&lt;<span>branch2</span>&gt;</span> # 在两个分支之间比较</li>
+					<li>git diff --staged # 比较暂存区和版本库差异</li>
+					<li>git diff --cached # 比较暂存区和版本库差异</li>
+					<li>git diff --stat # 仅仅比较统计信息</li>
+				</ul>
+				</div>
+				<div class="list_description" >查看提交记录
+				<ul >	
+					<li>git log git log  <span>&lt;<span>file</span>&gt;</span> # 查看该文件每次提交记录</li>
+					<li>git log -p  <span>&lt;<span>file</span>&gt;</span> # 查看每次详细修改内容的diff</li>
+					<li>git log -p -2 # 查看最近两次详细修改内容的diff</li>
+					<li>git log --stat #查看提交统计信息</li>
+				</ul>
+				</div>
+				<div class="list_description" >tig
+				<ul >	
+					<li>Mac上可以使用tig代替diff和log，brew install tig</li>
+				</ul>
+				</div>
+				<div class="list_description" >Git 本地分支管理<br/>查看、切换、创建和删除分支
+				<ul >	
+					<li>git br -r # 查看远程分支</li>
+					<li>git br  <span>&lt;<span>new_branch</span>&gt;</span> # 创建新的分支</li>
+					<li>git br -v # 查看各个分支最后提交信息</li>
+					<li>git br --merged # 查看已经被合并到当前分支的分支</li>
+					<li>git br --no-merged # 查看尚未被合并到当前分支的分支</li>
+					<li>git co <span>&lt;<span>branch</span>&gt;</span> # 切换到某个分支</li>
+					<li>git co -b <span>&lt;<span>new_branch</span>&gt;</span> # 创建新的分支，并且切换过去</li>
+					<li>git co -b <span>&lt;<span>new_branch</span>&gt;</span> <span>&lt;<span>branch</span>&gt;</span> # 基于branch创建新的new_branch</li>
+					<li>git co $id # 把某次历史提交记录checkout出来，但无分支信息，切换到其他分支会自动删除</li>
+					<li>git co $id -b<span>&lt;<span>new_branch</span>&gt;</span> # 把某次历史提交记录checkout出来，创建成一个分支</li>
+					<li>git br -d <span>&lt;<span>branch</span>&gt;</span> # 删除某个分支</li>
+					<li>git br -D <span>&lt;<span>branch</span>&gt;</span # 强制删除某个分支 (未被合并的分支被删除的时候需要强制)</li>
+				</ul>
+				</div>
+				<div class="digg">
+					<div class="dig">
+						顶<br/>1
+					</div>
+					<div class="dig">
+						踩<br/>0
+					</div>
+				</div>
+				<div class="list_description">
+					<ul class="pages" style="line-height:36px;">
+						<li><a href="js.html"><div class="last_article"><i class='fa fa-chevron-up' aria-hidden='true'></i>&nbsp&nbsp上一篇</div>&nbsp&nbsp正则总结 - 不完全深入版</a></li>
+						<li><a href="html1.html"><div class="last_article"><i class='fa fa-chevron-up' aria-hidden='true'></i>&nbsp&nbsp下一篇</div>&nbsp&nbspHTML5基础知识汇总_标签结构上的整改</a></li>
+					</ul>
+				</div>
+			</div>
+			<a href="javascript:;" id="btn" title="回到顶部"></a>
+		</div>
+	</div>
+</body>
+</html>
