@@ -9,10 +9,10 @@
 /*标题*/
 .link_title{
     margin: 20px 0 0 30px;
+	display: block;
 }
 .link_title a{
 	margin-left: 5px;
-	font-size: 25px;
 	color: #000;
 	cursor: pointer;
 }
@@ -20,6 +20,7 @@
 	color: #999;
 }
 .list_description{
+	display: block;
 	font: 14px/24px 'microsoft yahei';
     margin: 17px 40px 10px 20px;
     text-indent: 2em;
@@ -42,4 +43,26 @@
 .link_comments:after{
 	content: "评论";
 }
+.apart_left,.apart_right{
+	width: 93px;
+    height: 30px;
+    background-color: white;
+    float: right;
+    margin-right: 20px;
+    margin-top: 7px;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.apart_left:after{
+	content: "  目录视图";
+	color: #999;
+}
+.apart_right:after{
+	content: "  摘要视图";
+	color: #999;
+}
+
 
