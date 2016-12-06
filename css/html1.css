@@ -138,3 +138,39 @@
 .page a:link, .page a:visited {
     color: #c88326;
 }
+.talk_people{
+    width: 100px;
+    height: 100px;
+    /*background-color: red;*/
+    border-radius: 50%;
+    margin: 0 35px 0 25px;
+    background-image: url(../image/people.jpg);
+    background-size: 100%;
+    float: left;
+}
+.people_talk{
+    display: inline-block;
+    border: 1px solid #999;
+    height: 100px;
+    width: 70%;
+    margin-left: -12px;
+    /*float: right;*/
+}
+.triangle{
+    float: left;
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    border-bottom:1px solid #999;
+    border-left:1px solid #999;
+    margin: 40px 0 0 0;
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg);     /* IE 9 */
+    -moz-transform:rotate(45deg);    /* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(45deg);  /* Opera */
+}
+textarea{
+    resize:none;
+    margin-top: 6px;
+}
